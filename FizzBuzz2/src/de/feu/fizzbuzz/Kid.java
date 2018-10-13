@@ -22,8 +22,5 @@ public class Kid {
 
 	void sayWord(int i) {
 		System.out.print(determineNextWord(i));
-		if (i < 100) {
-			System.out.print(", ");
-		}
 	}
 }

@@ -13,6 +13,9 @@ public class Classroom {
 	public void startGame() {
 		for (int i = 1; i <= 100; i++) {
 			kids.get(i % kids.size()).sayWord(i);
+			if (i < 100) {
+				System.out.print(", ");
+			}
 		}
 	}
 }
