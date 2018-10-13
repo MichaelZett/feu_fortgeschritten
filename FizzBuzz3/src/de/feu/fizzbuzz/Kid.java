@@ -1,9 +1,15 @@
 package de.feu.fizzbuzz;
 
-public interface Kid {
-	String determineNextWord(int i);
+public abstract class Kid implements Wordsayer {
+	private int kidNo;
 
-	default void sayWord(int i) {
-		System.out.print(determineNextWord(i));
+	public Kid(int kidNo) {
+		super();
+		this.kidNo = kidNo;
 	}
+
+	public int getKidNo() {
+		return kidNo;
+	}
+
 }

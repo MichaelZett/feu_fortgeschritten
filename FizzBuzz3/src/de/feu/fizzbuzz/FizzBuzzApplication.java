@@ -10,7 +10,7 @@ public class FizzBuzzApplication {
 		room.startGame();
 	}
 
-	private static Kid createKid(int i) {
+	private static Wordsayer createKid(int i) {
 		if (i % 2 == 0) {
 			System.out.println("Smart");
 			return new SmartKid(i);

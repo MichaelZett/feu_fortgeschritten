@@ -4,9 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Classroom {
-	private List<Kid> kids = new LinkedList<>();
+	private List<Wordsayer> kids = new LinkedList<>();
 
-	public void enter(Kid kid) {
+	public void enter(Wordsayer kid) {
 		kids.add(kid);
 	}
 

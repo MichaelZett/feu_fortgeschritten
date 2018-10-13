@@ -1,15 +1,12 @@
 package de.feu.fizzbuzz;
 
-public class SmartKid implements Kid {
-	int kidNo;
-
+public class SmartKid extends Kid {
 	public SmartKid(int kidNo) {
-		super();
-		this.kidNo = kidNo;
+		super(kidNo);
 	}
 
 	@Override
-	public String determineNextWord(int number) {
+	public String determineWord(int number) {
 		String word = String.valueOf(number);
 		if (number % (Word.FIZZ.getNumber() * Word.BUZZ.getNumber()) == 0) {
 			word = Word.FIZZ.toString() + Word.BUZZ.toString();
@@ -18,7 +15,7 @@ public class SmartKid implements Kid {
 		} else if (number % Word.BUZZ.getNumber() == 0) {
 			word = Word.BUZZ.toString();
 		}
-		return kidNo + " says " + word;
+		return getKidNo() + " says " + word;
 	}
 
 }

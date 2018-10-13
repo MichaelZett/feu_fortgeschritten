@@ -1,16 +1,13 @@
 package de.feu.fizzbuzz;
 
-public class DumbKid implements Kid {
-	int kidNo;
-
+public class DumbKid extends Kid {
 	public DumbKid(int kidNo) {
-		super();
-		this.kidNo = kidNo;
+		super(kidNo);
 	}
 
 	@Override
-	public String determineNextWord(int i) {
-		return String.valueOf(i);
+	public String determineWord(int i) {
+		return getKidNo() + " says " + String.valueOf(i);
 	}
 
 }
