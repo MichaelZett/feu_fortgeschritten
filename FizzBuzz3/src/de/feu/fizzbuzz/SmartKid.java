@@ -15,7 +15,7 @@ public class SmartKid extends Kid {
 		} else if (number % Word.BUZZ.getNumber() == 0) {
 			word = Word.BUZZ.toString();
 		}
-		return getKidNo() + " says " + word;
+		return word;
 	}
 
 }

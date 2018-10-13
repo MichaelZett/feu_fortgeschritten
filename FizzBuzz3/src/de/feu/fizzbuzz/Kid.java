@@ -12,4 +12,8 @@ public abstract class Kid implements Wordsayer {
 		return kidNo;
 	}
 
+	@Override
+	public String getId() {
+		return String.valueOf(kidNo);
+	}
 }

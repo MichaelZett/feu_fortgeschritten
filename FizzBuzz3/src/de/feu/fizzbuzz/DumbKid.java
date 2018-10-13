@@ -7,7 +7,7 @@ public class DumbKid extends Kid {
 
 	@Override
 	public String determineWord(int i) {
-		return getKidNo() + " says " + String.valueOf(i);
+		return String.valueOf(i);
 	}
 
 }
