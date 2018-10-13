@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
 public class KidTest {
-	Kid testee = new Kid(1);
+	Kid testee = new Kid();
 
 	@Test
 	public void shouldSayFizzForMultipleOfThree() {
