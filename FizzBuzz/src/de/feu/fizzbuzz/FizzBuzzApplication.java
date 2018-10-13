@@ -6,6 +6,9 @@ public class FizzBuzzApplication {
 		Kid kid = new Kid();
 		for (int i = 1; i <= 100; i++) {
 			kid.sayWord(i);
+			if (i < 100) {
+				System.out.print(", ");
+			}
 		}
 	}
 

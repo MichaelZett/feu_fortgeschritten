@@ -1,22 +1,24 @@
 package de.feu.fizzbuzz;
 
 public class Kid {
-	String determineWord(int i) {
-		String word = String.valueOf(i);
-		if (i % 15 == 0) {
-			word = "FizzBuzz";
-		} else if (i % 3 == 0) {
-			word = "Fizz";
-		} else if (i % 5 == 0) {
-			word = "Buzz";
+	private static final String BUZZ_WORD = "Buzz";
+	private static final String FIZZ_WORD = "Fizz";
+	private static final int BUZZ_NUMBER = 5;
+	private static final int FIZZ_NUMBER = 3;
+
+	String determineWord(int number) {
+		String word = String.valueOf(number);
+		if (number % (FIZZ_NUMBER * BUZZ_NUMBER) == 0) {
+			word = FIZZ_WORD + BUZZ_WORD;
+		} else if (number % FIZZ_NUMBER == 0) {
+			word = FIZZ_WORD;
+		} else if (number % BUZZ_NUMBER == 0) {
+			word = BUZZ_WORD;
 		}
 		return word;
 	}
 
-	void sayWord(int i) {
-		System.out.print(determineWord(i));
-		if (i < 100) {
-			System.out.print(", ");
-		}
+	void sayWord(int number) {
+		System.out.print(determineWord(number));
 	}
 }
