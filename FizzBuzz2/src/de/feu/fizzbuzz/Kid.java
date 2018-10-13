@@ -8,7 +8,7 @@ public class Kid {
 		this.kidNo = kidNo;
 	}
 
-	String determineNextWord(int number) {
+	String determineWord(int number) {
 		String word = String.valueOf(number);
 		if (number % (Word.FIZZ.getNumber() * Word.BUZZ.getNumber()) == 0) {
 			word = Word.FIZZ.toString() + Word.BUZZ.toString();
@@ -21,6 +21,6 @@ public class Kid {
 	}
 
 	void sayWord(int i) {
-		System.out.print(determineNextWord(i));
+		System.out.print(determineWord(i));
 	}
 }
